@@ -1,4 +1,5 @@
 <?php
+
 namespace PHPIITraining\View;
 
 class LoginForm
@@ -13,12 +14,13 @@ class LoginForm
 		<br/>
 <form method="post" action="/index.php" method="post">
 
-<label>Firstname:</label><input type="text" name="firstName" value=""/><br/><br>
-<label>lastname:</label><input type="text" name="lastName" value=""/><br/><br>
-<label>Phone Number:</label><input type="text" name="phoneNumber" value=""/><br/><br>
-<label>Are you a vegetarian:</label>
-        <input type="radio" name="isVegetarian" value="Yes"/>Yes
-        <input type="radio" name="isVegetarian" value="No"/>No<br/><br><br>
+<label>Firstname: </label><input type="text" name="firstName" value=""/><br/><br>
+<label>lastname: </label><input type="text" name="lastName" value=""/><br/><br>
+<label>Phone Number: </label><input type="text" name="phoneNumber" value=""/><br/><br>
+<label>Gender: </label>
+        <input type="radio" name="gender" value="Male"/>Male
+        <input type="radio" name="gender" value="Female"/>Female
+        <input type="radio" name="gender" value="Other"/>Other<br/><br><br>
 <input type="submit" name="submit" />
 </form>
 </div>
