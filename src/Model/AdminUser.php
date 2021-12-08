@@ -4,12 +4,13 @@ namespace PHPIITraining\Model;
 
 class AdminUser extends User
 {
-    protected const typeOfUser = 'Admin';
+    protected string $typeOfUser = 'Admin';
 
     public function __construct($firstName, $lastName, $phoneNumber, $gender)
     {
         parent::__construct($firstName, $lastName, $phoneNumber, $gender);
-        $this->firstName = parent().self::typeOfUser;
+        $this->firstName = $this->firstName . $this->typeOfUser;
+
     }
 
     public function deleteUsers()

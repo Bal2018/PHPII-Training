@@ -4,9 +4,9 @@ namespace PHPIITraining\View;
 
 class LoginForm
 {
-    public static function render(): string
+    public static function render(): void
     {
-        return <<<EOT
+        echo <<<EOT
 <body style='font-family: Times New Roman, verdana, sans-serif;'>
 	<div style='width: 80%; padding 10px; border: 5px solid black; background-color: #bee5eb; color: black; margin: auto; text-align: -webkit-left; '>
 	

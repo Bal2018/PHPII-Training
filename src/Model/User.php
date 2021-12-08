@@ -2,15 +2,15 @@
 
 namespace PHPIITraining\Model;
 
-class User implements \UserInterface
+class User implements UserInterface
 {
     public string $firstName;
-    public string $lastName;
-    public $DateStamp;
+    public  string$lastName;
+    public string $DateStamp;
     protected int $userID;
     public string $gender;
     public string $phoneNumber;
-    public string $userType;
+    protected string $typeOfUser;
 
     public function __construct($firstName, $lastName, $phoneNumber, $gender)
     {
@@ -19,7 +19,11 @@ class User implements \UserInterface
         $this->DateStamp= date('d-m-Y');
         $this->gender = $gender;
         $this->phoneNumber = $phoneNumber;
-        $this->userType = "";
+        $this->typeOfUser = "";
+    }
+    public function getUserType(): string
+    {
+        return $this->typeOfUser;
     }
     public function getFirstName(): string
     {

@@ -1,5 +1,7 @@
 <?php
 
+namespace PHPIITraining\Model;
+
 interface UserInterface
 {
     public function getFirstName(): string;

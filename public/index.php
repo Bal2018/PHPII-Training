@@ -7,10 +7,7 @@ use PHPIITraining\View\LoginForm;
 
 use PHPIITraining\Controller\LoginController;
 
-echo LoginForm::render();
-$aUser = new AdminUser('Fred','Jimbo','098765431','Other');
+$controller = new LoginController();
+$controller->loginActions();
 
-//$firstName, $lastName, $phoneNumber, $gender)
-//
-//$controller = new LoginController();
-//$user = $controller->loginActions();
+
