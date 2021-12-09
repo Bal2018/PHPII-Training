@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PHPIITraining\DataRepo;
+namespace PHPIITraining\DataHandler;
 
 
 use Exception;
@@ -15,14 +15,19 @@ class BaseDataHandler
     /**
      * @throws Exception
      */
-    protected function __construct()
+    public function __construct()
     {
         try {
             $this->pdo = new PDO('mysql:host=localhost; dbname=phpcourse', 'vagrant', 'vagrant');
-            $this->pdo->exec('select * from Users');
+
         }
         catch (PDOException $e) {
             $logEntry = time(). "|".$e->getMessage().PHP_EOL;
         }
     }
+    public function dbConnections(array $config)
+    {
+
+    }
+
 }

@@ -2,7 +2,7 @@
 
 namespace PHPIITraining\Controller;
 
-use PHPIITraining\DataRepo\UserDataHandler;
+use PHPIITraining\DataHandler\UserDataHandler;
 use PHPIITraining\Factory\UserFactory;
 use PHPIITraining\Model\AdminUser;
 use PHPIITraining\Model\User;
